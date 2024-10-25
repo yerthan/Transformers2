@@ -23,7 +23,7 @@ public class Main {
         ArrayList<Integer> array2 = new ArrayList<>();
         array2.add(4);
         array2.add(5);
-        array2.add(6);;
+        array2.add(6);
 
     }
 }
