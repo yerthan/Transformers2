@@ -1,17 +1,16 @@
 package org.iesvdm.transformer;
 
-public class GrettingAdder implements Transformer<Object>{
+public class GrettingAdder implements Transformer<String>{
 
     private String saludo;
 
-    public void HelloAdder(String greeting) {
+    public void setSaludo(String greeting) {
         this.saludo = greeting;
     }
 
 
     @Override
-    public Object transform(Object obj) {
-        String cadena = obj.toString();
-        return saludo + " " + cadena;
+    public String transform(String obj) {
+        return saludo + " " + obj;
     }
 }

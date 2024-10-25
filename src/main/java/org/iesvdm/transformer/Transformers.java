@@ -40,8 +40,6 @@ public class Transformers
             LispList<T> transformedTail = transformList(tran, l.tail());
             return transformedTail.cons(transformedHead);
         }
-
-
         return l;
     }
 
