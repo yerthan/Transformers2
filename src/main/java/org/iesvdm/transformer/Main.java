@@ -1,6 +1,9 @@
 package org.iesvdm.transformer;
 
 import java.util.ArrayList;
+import java.util.List;
+
+import static org.iesvdm.transformer.Transformers.transformList;
 
 public class Main {
 
@@ -21,11 +24,6 @@ public class Main {
         array2.add(4);
         array2.add(5);
         array2.add(6);
-
-
-
-
-
 
     }
 }

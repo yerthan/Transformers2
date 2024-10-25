@@ -60,7 +60,7 @@ public class LispList<E>
             return ","+l.head()+restToString(l.tail());
     }
 
-    private static class Cell <T>
+    static class Cell <T>
     {
         T first;
         Cell<T> rest;
