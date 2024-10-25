@@ -28,5 +28,23 @@ public class Transformers
     }
 
 
+    //Exercise 5
+    public static <T> LispList<T> transformList(Transformer<T> tran, LispList<T> l) {
+        ArrayList<T> a = new ArrayList<>();
+
+        if (l.isEmpty()) {
+            System.out.println("The ArrayList is empty");
+        } else {
+
+            T transformedHead = tran.transform(l.head());
+            LispList<T> transformedTail = transformList(tran, l.tail());
+            return transformedTail.cons(transformedHead);
+        }
+
+
+        return l;
+    }
+
+
 }
 
